@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    p {
+      color: salmon;
+    }
+    p::first-letter {
+      color: yellow;
+    }
+    p::after {
+      content: "😃";
+    }
+    p:hover {
+      color: aquamarine;
+    }
+    div p:nth-child(2) {
+      color: blue;
+    }
+
+    button:active {
+      color: tomato;
+    }
+    ::placeholder {
+      color: purple;
+    }
+  </style>
+  <body>
+    <p>hola</p>
+    <div>
+      <p>Hola</p>
+      <p>master</p>
+      <p>mundo</p>
+      <button id="btn">presioname</button>
+      <input type="password" placeholder="placeholder" />
+    </div>
+  </body>
+</html>
